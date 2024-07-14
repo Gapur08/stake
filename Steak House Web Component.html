@@ -1,0 +1,209 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+		<script src="https://unpkg.com/unlazy@0.11.3/dist/unlazy.with-hashing.iife.js" defer init></script>
+		<script type="text/javascript">
+			window.tailwind.config = {
+				darkMode: ['class'],
+				theme: {
+					extend: {
+						colors: {
+							border: 'hsl(var(--border))',
+							input: 'hsl(var(--input))',
+							ring: 'hsl(var(--ring))',
+							background: 'hsl(var(--background))',
+							foreground: 'hsl(var(--foreground))',
+							primary: {
+								DEFAULT: 'hsl(var(--primary))',
+								foreground: 'hsl(var(--primary-foreground))'
+							},
+							secondary: {
+								DEFAULT: 'hsl(var(--secondary))',
+								foreground: 'hsl(var(--secondary-foreground))'
+							},
+							destructive: {
+								DEFAULT: 'hsl(var(--destructive))',
+								foreground: 'hsl(var(--destructive-foreground))'
+							},
+							muted: {
+								DEFAULT: 'hsl(var(--muted))',
+								foreground: 'hsl(var(--muted-foreground))'
+							},
+							accent: {
+								DEFAULT: 'hsl(var(--accent))',
+								foreground: 'hsl(var(--accent-foreground))'
+							},
+							popover: {
+								DEFAULT: 'hsl(var(--popover))',
+								foreground: 'hsl(var(--popover-foreground))'
+							},
+							card: {
+								DEFAULT: 'hsl(var(--card))',
+								foreground: 'hsl(var(--card-foreground))'
+							},
+						},
+					}
+				}
+			}
+		</script>
+		<style type="text/tailwindcss">
+			@layer base {
+				:root {
+					--background: 0 0% 100%;
+--foreground: 240 10% 3.9%;
+--card: 0 0% 100%;
+--card-foreground: 240 10% 3.9%;
+--popover: 0 0% 100%;
+--popover-foreground: 240 10% 3.9%;
+--primary: 240 5.9% 10%;
+--primary-foreground: 0 0% 98%;
+--secondary: 240 4.8% 95.9%;
+--secondary-foreground: 240 5.9% 10%;
+--muted: 240 4.8% 95.9%;
+--muted-foreground: 240 3.8% 46.1%;
+--accent: 240 4.8% 95.9%;
+--accent-foreground: 240 5.9% 10%;
+--destructive: 0 84.2% 60.2%;
+--destructive-foreground: 0 0% 98%;
+--border: 240 5.9% 90%;
+--input: 240 5.9% 90%;
+--ring: 240 5.9% 10%;
+--radius: 0.5rem;
+				}
+				.dark {
+					--background: 240 10% 3.9%;
+--foreground: 0 0% 98%;
+--card: 240 10% 3.9%;
+--card-foreground: 0 0% 98%;
+--popover: 240 10% 3.9%;
+--popover-foreground: 0 0% 98%;
+--primary: 0 0% 98%;
+--primary-foreground: 240 5.9% 10%;
+--secondary: 240 3.7% 15.9%;
+--secondary-foreground: 0 0% 98%;
+--muted: 240 3.7% 15.9%;
+--muted-foreground: 240 5% 64.9%;
+--accent: 240 3.7% 15.9%;
+--accent-foreground: 0 0% 98%;
+--destructive: 0 62.8% 30.6%;
+--destructive-foreground: 0 0% 98%;
+--border: 240 3.7% 15.9%;
+--input: 240 3.7% 15.9%;
+--ring: 240 4.9% 83.9%;
+				}
+			}
+		</style>
+  </head>
+  <body>
+    <div class="bg-gradient-to-r from-yellow-400 to-red-400 text-white text-center py-20">
+  <h1 class="text-5xl font-bold">Steak House</h1>
+  <p class="mt-4 text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  <button class="mt-8 bg-secondary text-secondary-foreground hover:bg-secondary/80 py-2 px-4 rounded">Discover Now</button>
+</div>
+<div class="text-center py-16">
+  <h2 class="text-3xl font-bold">FOOD MENU</h2>
+  <p class="mt-2 text-muted-foreground">We Have Special Menus</p>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8 max-w-4xl mx-auto">
+    <div class="flex items-center">
+      <img src="img/gallery-img1.jpg" alt="Breakfast" class="w-24 h-24 object-cover rounded mr-4">
+      <div>
+        <h3 class="font-bold">Breakfast</h3>
+        <p class="text-muted-foreground">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <span class="block mt-2 text-primary">$24</span>
+      </div>
+    </div>
+    <div class="flex items-center">
+      <img src="img/gallery-img2.jpg" alt="Seafood" class="w-24 h-24 object-cover rounded mr-4">
+      <div>
+        <h3 class="font-bold">Seafood</h3>
+        <p class="text-muted-foreground">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <span class="block mt-2 text-primary">$32</span>
+      </div>
+    </div>
+    <div class="flex items-center">
+      <img src="img/gallery-img3.jpg" alt="New Pizza" class="w-24 h-24 object-cover rounded mr-4">
+      <div>
+        <h3 class="font-bold">New Pizza</h3>
+        <p class="text-muted-foreground">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <span class="block mt-2 text-primary">$18</span>
+      </div>
+    </div>
+    <div class="flex items-center">
+      <img src="img/gallery-img4.jpg" alt="Spicy Beef" class="w-24 h-24 object-cover rounded mr-4">
+      <div>
+        <h3 class="font-bold">Spicy Beef</h3>
+        <p class="text-muted-foreground">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <span class="block mt-2 text-primary">$46</span>
+      </div>
+    </div>
+    <div class="flex items-center">
+      <img src="img/gallery-img5.jpg" alt="Mushroom" class="w-24 h-24 object-cover rounded mr-4">
+      <div>
+        <h3 class="font-bold">Mushroom</h3>
+        <p class="text-muted-foreground">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <span class="block mt-2 text-primary">$24</span>
+      </div>
+    </div>
+    <div class="flex items-center">
+      <img src="img/gallery-img6.jpg" alt="Dinner" class="w-24 h-24 object-cover rounded mr-4">
+      <div>
+        <h3 class="font-bold">Dinner</h3>
+        <p class="text-muted-foreground">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <span class="block mt-2 text-primary">$36</span>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="bg-muted py-16">
+  <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 text-center">
+    <div>
+      <h3 class="text-2xl font-bold">OUR TASTE</h3>
+      <p class="mt-4 text-muted-foreground">Nunc lobortis quis nisi nec facilisis. Donec tristique ipsum arcu, quis malesuada nisi malesuada nec.</p>
+    </div>
+    <div>
+      <h3 class="text-2xl font-bold">OUR SERVICE</h3>
+      <p class="mt-4 text-muted-foreground">Maecenas dictum nulla dui, eu mattis velit ultricies sed. Maecenas ligula velit, dictum eu velit non, cursus vehicula erat.</p>
+    </div>
+  </div>
+</div>
+<div class="text-center py-16">
+  <h2 class="text-3xl font-bold">FOOD GALLERY</h2>
+  <p class="mt-2 text-muted-foreground">We Have Special Foods</p>
+  <div class="flex justify-center mt-8 space-x-4">
+    <button class="bg-primary text-primary-foreground hover:bg-primary/80 py-2 px-4 rounded">All</button>
+    <button class="bg-secondary text-secondary-foreground hover:bg-secondary/80 py-2 px-4 rounded">Breakfast</button>
+    <button class="bg-secondary text-secondary-foreground hover:bg-secondary/80 py-2 px-4 rounded">Pizza</button>
+    <button class="bg-secondary text-secondary-foreground hover:bg-secondary/80 py-2 px-4 rounded">Lunch</button>
+    <button class="bg-secondary text-secondary-foreground hover:bg-secondary/80 py-2 px-4 rounded">Dinner</button>
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8 max-w-4xl mx-auto">
+    <div>
+      <img src="img/gallery-img1.jpg" alt="Lorem One" class="w-full h-48 object-cover rounded">
+      <h3 class="mt-4 font-bold">Lorem One</h3>
+    </div>
+    <div>
+      <img src="img/gallery-img2.jpg" alt="Lorem ipsum two" class="w-full h-48 object-cover rounded">
+      <h3 class="mt-4 font-bold">Lorem ipsum two</h3>
+    </div>
+    <div>
+      <img src="img/gallery-img3.jpg" alt="Third Lorem ipsum" class="w-full h-48 object-cover rounded">
+      <h3 class="mt-4 font-bold">Third Lorem ipsum</h3>
+    </div>
+    <div>
+      <img src="img/gallery-img3.jpg" alt="Lorem ipsum fourth" class="w-full h-48 object-cover rounded">
+      <h3 class="mt-4 font-bold">Lorem ipsum fourth</h3>
+    </div>
+    <div>
+      <img src="img/gallery-img4.jpg" alt="Fifth Lorem ipsum" class="w-full h-48 object-cover rounded">
+      <h3 class="mt-4 font-bold">Fifth Lorem ipsum</h3>
+    </div>
+    <div>
+      <img src="img/home-bg-slideshow.jpg" alt="Sixth Lorem ipsum" class="w-full h-48 object-cover rounded">
+      <h3 class="mt-4 font-bold">Sixth Lorem ipsum</h3>
+    </div>
+  </div>
+</div>
+  </body>
+</html>
